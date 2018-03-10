@@ -1,0 +1,4 @@
+node_modules/
+public/compone
+.sass-cache
+npm-debug.log

@@ -1,0 +1,13 @@
+{
+  "name": "AnonyChat",
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies":{
+    "bootstrap": "4.0",
+    "jQuery": "3.3.1"
+  }
+}

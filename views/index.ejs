@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="components/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <% if (ENV_DEVELOPMENT) { %>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <% } %>
+</head>
+<body>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">AnonyChat</h3>
+                    <nav class="nav nav-masthead">
+                        <a class="active" href="/">Home</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="inner cover" id="app">
+                <h1 class="cover-heading"><%- title %></h1>
+                <p class="lead"><%- lead %></p>
+                <div class="chat-wrapper">
+                    <div id="user-form" class="row">
+                        <div class="col-md-12">
+                            <form id="userRegister">
+                                <div class="input-group input-group-lg">
+                                    <input id="username" class="form-control" type="text" placeholder="Your name or nickname...">
+                                    <span class="input-group-btn">
+                                      <input type="submit" class="btn btn-success btn-lg" value="Enter">
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="message-area" class="row" style="display:none">
+                        <div class="col-lg-8">
+                            <div class="panel panel-success">
+                                <div class="panel-heading">Messages</div>
+                                <div class="panel-body">
+                                    <ul id="chat" class="list-unstyled"></ul>
+                                </div>
+                                <div class="panel-footer">
+                                    <form id="message-form" autocomplete="off">
+                                        <div class="input-group input-group-sm">
+                                            <input id="message" class="form-control input-sm" type="text" placeholder="Type here...">
+                                            <span class="input-group-btn">
+                                             <input type="submit" class="btn btn-success btn-sm" value="Send message">
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="panel panel-success">
+                                <div class="panel-heading" id="online-users"></div>
+                                <div class="panel-body">
+                                    <ul class="list-group" id="users"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>
+                        &copy; 2018 <a href="#">AnonyChat</a> |
+                        Developed by <a href="https://devmartinez.net">E. Martinez</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="components/jquery/jquery-3.3.1.min.js"></script>
+<script src="components/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
