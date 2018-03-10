@@ -1,4 +1,10 @@
+# Other files
 node_modules/
-public/compone
 .sass-cache
 npm-debug.log
+.bowerrc
+
+# IDE files
+.idea/
+.project
+.vscode/
