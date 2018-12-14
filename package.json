@@ -1,5 +1,5 @@
 {
-  "name": "AnonyChat",
+  "name": "anonychat",
   "description": "Real time chat application with Node.js and Socket.io",
   "version": "1.0.0",
   "private": true,

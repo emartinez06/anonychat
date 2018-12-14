@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Node dependencies
 var express = require('express');
 var path = require('path');
@@ -63,7 +65,7 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 // Exports all the application configuration
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5000);
 
 // Setup the server port and give a user message
 var server = app.listen(app.get('port'), function() {
