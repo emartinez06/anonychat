@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Node dependencies
 var express = require('express');
 var path = require('path');
