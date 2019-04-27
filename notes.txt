@@ -1,0 +1,3 @@
+Keep process running forever
+
+"start": "pm2 start app.js > stdout.txt 2> stderr.txt &"
