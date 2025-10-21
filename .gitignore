@@ -3,6 +3,7 @@ node_modules/
 .sass-cache
 npm-debug.log
 .bowerrc
+.env
 
 # IDE files
 .idea/
